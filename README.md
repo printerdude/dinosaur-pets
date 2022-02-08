@@ -10,3 +10,5 @@
 
 
 ## wireframe
+
+![Wireframe](https://user-images.githubusercontent.com/98079271/152946963-25dc2253-5719-4fbe-ad36-d73298a49bee.png)
