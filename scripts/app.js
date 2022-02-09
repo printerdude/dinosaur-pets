@@ -13,7 +13,10 @@ const increaseAge = () => {
     $("#petAge").text('Age: ' + age);
     // Changing Current Image
     if (age === 10) {
-        currentImage.attr("src", "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-XO6fhWZudFo%2FT4EAI0mY9RI%2FAAAAAAAAAB4%2FvIf2bcQVC80%2Fs1600%2FSeismosaurus.jpg&f=1&nofb=1");
+        currentImage.attr("src", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fusercontent2.hubstatic.com%2F13811955_f1024.jpg&f=1&nofb=1");
+    }
+    if (age === 20) {
+        currentImage.attr("src", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette2.wikia.nocookie.net%2Fsonicpokemon%2Fimages%2Fb%2Fbf%2FCharizard_AG_anime.png%2Frevision%2Flatest%3Fcb%3D20130714192025&f=1&nofb=1");
     }
 }
 
