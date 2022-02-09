@@ -5,13 +5,20 @@ let sleepiness = 1;
 
 
 
-
+const currentImage = $(".currentImage");
 // Increase petAge
 // setInterval(updateTimer, 1000);
 const increaseAge = () => {
     age++;
     $("#petAge").text('Age: ' + age);
+    // Changing Current Image
+    if (age === 10) {
+        currentImage.attr("src", "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-XO6fhWZudFo%2FT4EAI0mY9RI%2FAAAAAAAAAB4%2FvIf2bcQVC80%2Fs1600%2FSeismosaurus.jpg&f=1&nofb=1");
     }
+}
+
+
+
 
 
 // Increase petStats to reflect growing hunger,boredom,and sleepiness.
@@ -72,5 +79,6 @@ const lightsOff = $(".lightsOff");
 lightsOff.on("click", (event) =>{
     sleepiness--;
 });
+
 
 
