@@ -123,7 +123,7 @@ lightsOff.on("click", (event) => {
 // });
 
 document.querySelector("#nameButton").addEventListener("click", function(event){
-    // preventDefault 
+// preventDefault 
     // this will revent the default submission of a form
     event.preventDefault();
   
@@ -133,7 +133,7 @@ document.querySelector("#nameButton").addEventListener("click", function(event){
     // get user input
     const userInput = document.querySelector("#nameInput").value;
   
-    // create an element? 
+    // create an element 
     const newName = $("#petNameDisplay");
     newName.text(userInput);
   
