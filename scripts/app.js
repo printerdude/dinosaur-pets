@@ -35,6 +35,9 @@ const increaseAge = () => {
 const increaseHunger = () => {
     hunger++;
     $("#hungerStat").text('Hunger: ' + hunger);
+    if (hunger < 1) {
+        hunger = 1; 
+    }
     if (hunger === 10) {
         alert("Your dino has ran away. You will never see them again. Refresh the page to restart the game.");
         clearInterval(ageTimer);
@@ -46,6 +49,9 @@ const increaseHunger = () => {
 const increaseBoredom = () => {;
     boredom++;
     $("#boredomStat").text('Boredom: ' + boredom);
+    if (boredom < 1) {
+        boredom = 1; 
+    }
     if (boredom === 10) {
         alert("Your dino has ran away. You will never see them again. Refresh the page to restart the game.");
         clearInterval(ageTimer);
@@ -57,6 +63,9 @@ const increaseBoredom = () => {;
 const increaseSleepiness = () => {
     sleepiness++;
     $("#sleepinessStat").text('Sleepiness: ' + sleepiness);
+    if (sleepiness < 1) {
+        sleepiness = 1; 
+    }
     if (sleepiness === 10) {
         alert("Your dino has ran away. You will never see them again. Refresh the page to restart the game.");
         clearInterval(ageTimer);
