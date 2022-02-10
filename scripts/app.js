@@ -88,7 +88,7 @@ startButton.on("click", () => {
 	increaseHunger();
     increaseBoredom();
     increaseSleepiness();
-    ageTimer = setInterval(increaseAge, 500);
+    ageTimer = setInterval(increaseAge, 1000);
 	hungerTimer = setInterval(increaseHunger, 1000);
     boredomTimer = setInterval(increaseBoredom, 1000);
     sleepinessTimer = setInterval(increaseSleepiness, 1000);
@@ -97,24 +97,45 @@ startButton.on("click", () => {
 
 // Feed, play, lights off buttons for User Action
 const feed = $(".feed");
-feed.on("click", (event) =>{
+feed.on("click", (event) => {
     hunger--;
 });
 
 const play = $(".play");
-play.on("click", (event) =>{
+play.on("click", (event) => {
     boredom--;
 });
 
 const lightsOff = $(".lightsOff");
-lightsOff.on("click", (event) =>{
+lightsOff.on("click", (event) => {
     sleepiness--;
 });
 
 
-const stopGame = function () {
-clearInterval(increaseAge());
-// clearInterval(sleepInterval);
-// clearInterval(sleepInterval);
-// clearInterval(sleepInterval);
-}
+// Giving Name to Pet
+// const nameButton = $("#nameButton");
+
+
+// nameButton.on("click", () => {
+//     const nameInput = $("#nameInput").value;
+    
+
+// });
+
+document.querySelector("#nameButton").addEventListener("click", function(event){
+    // preventDefault 
+    // this will revent the default submission of a form
+    event.preventDefault();
+  
+    // this will stop the parent event trigger 
+    event.stopPropagation();
+  
+    // get user input
+    const userInput = document.querySelector("#nameInput").value;
+  
+    // create an element? 
+    const newName = $("#petNameDisplay");
+    newName.text(userInput);
+  
+    document.querySelector("#nameInput").value = "";
+  });
