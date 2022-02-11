@@ -19,13 +19,21 @@ body {
 }
 
 .petImage {
-    border: 5px solid black;
-    height: 600px;
+    background-color: #ffffff;
+    height: 500px;
+}
+
+.petStats {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 20px 0;
 }
 
 .status{
     font-size: 20px;
-    background-color: #ffffff;
+    background-color: white;
+     padding: 20px;
+
 }
 
 img{
