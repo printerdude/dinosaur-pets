@@ -96,17 +96,17 @@ startButton.on("click", () => {
 
 
 // Feed, play, lights off buttons for User Action
-const feed = $(".feed");
+const feed = $("#feed");
 feed.on("click", (event) => {
     hunger--;
 });
 
-const play = $(".play");
+const play = $("#play");
 play.on("click", (event) => {
     boredom--;
 });
 
-const lightsOff = $(".lightsOff");
+const lightsOff = $("#lightsOff");
 lightsOff.on("click", (event) => {
     sleepiness--;
 });
