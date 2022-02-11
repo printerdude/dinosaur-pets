@@ -90,7 +90,7 @@ startButton.on("click", () => {
 	increaseHunger();
     increaseBoredom();
     increaseSleepiness();
-    ageTimer = setInterval(increaseAge, 3000);
+    ageTimer = setInterval(increaseAge, 200);
 	hungerTimer = setInterval(increaseHunger, 3000);
     boredomTimer = setInterval(increaseBoredom, 3000);
     sleepinessTimer = setInterval(increaseSleepiness, 3000);
@@ -121,19 +121,19 @@ document.querySelector("#nameButton").addEventListener("click", function(event){
 // preventDefault 
     // this will revent the default submission of a form
     event.preventDefault();
-  
+
     // this will stop the parent event trigger 
     event.stopPropagation();
-  
+
     // get user input
     const userInput = document.querySelector("#nameInput").value;
-  
+
     // create an element 
     const newName = $("#petNameDisplay");
     newName.text(userInput);
-  
+
     document.querySelector("#nameInput").value = "";
-  });
+});
 
 
 //   Restart button
