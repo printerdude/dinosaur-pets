@@ -19,8 +19,22 @@ body {
 }
 
 .petImage {
-    background-color: #ffffff;
     height: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentTitle {
+    background-color: aliceblue;
+}
+
+img {
+    height: 100%;
+	width: auto;
+	object-fit: cover;
 }
 
 .petStats {
@@ -29,15 +43,20 @@ body {
     margin: 50px 0 20px 0;
 }
 
-.status{
+.status {
     font-size: 20px;
     background-color: white;
-     padding: 20px;
+    padding: 20px;
 
 }
 
-img{
-    height: 100%;
-	width: auto;
-	object-fit: cover;
+.petActions {
+    display: flex;
+    flex-direction: row;
+}
+
+.action {
+    font-size: 40px;
+    padding: 15px;
+    margin: 20px;
 }

@@ -25,6 +25,10 @@
 <body>
     <section class="petName">
         <h1 id="petNameDisplay">Dino Pet NickName</h1>
+        <form>
+            <input type="text" id="nameInput">
+            <button id="nameButton">Confirm New Pet Name</button>
+        </form>
         <button class="startButton">Start!</button>
         <div id="petAge">Age: 0</div>
     </section>
@@ -38,21 +42,15 @@
         <div class ="status" id="sleepinessStat">Sleepiness: 1</div>
     </section>
     <section class="petActions">
-        <span>
         <div>
-            <button class="feed">Feed</button>
+            <button class ="action" class="feed">Feed</button>
         </div>
         <div>
-            <button class="play">Play</button>
+            <button class ="action" class="play">Play</button>
         </div>
         <div>
-            <button class="lightsOff">Lights Off</button>
+            <button class ="action" class="lightsOff">Lights Off</button>
         </div>
-        </span>
-        <form>
-            <input type="text" id="nameInput">
-            <button id="nameButton">Confirm New Pet Name</button>
-        </form>
     </section>
 </body>
 </html>
