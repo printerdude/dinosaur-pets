@@ -90,10 +90,10 @@ startButton.on("click", () => {
 	increaseHunger();
     increaseBoredom();
     increaseSleepiness();
-    ageTimer = setInterval(increaseAge, 200);
-	hungerTimer = setInterval(increaseHunger, 3000);
-    boredomTimer = setInterval(increaseBoredom, 3000);
-    sleepinessTimer = setInterval(increaseSleepiness, 3000);
+    ageTimer = setInterval(increaseAge, 6000);
+	hungerTimer = setInterval(increaseHunger, 4000);
+    boredomTimer = setInterval(increaseBoredom, 4000);
+    sleepinessTimer = setInterval(increaseSleepiness, 4000);
 });
 
 
