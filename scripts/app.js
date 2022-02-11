@@ -113,14 +113,6 @@ lightsOff.on("click", (event) => {
 
 
 // Giving Name to Pet
-// const nameButton = $("#nameButton");
-
-
-// nameButton.on("click", () => {
-//     const nameInput = $("#nameInput").value;
-    
-
-// });
 
 document.querySelector("#nameButton").addEventListener("click", function(event){
 // preventDefault 
