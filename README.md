@@ -42,15 +42,24 @@ Bootstrap, jQuery, and flex were technologies used to create this project. Boots
 I first started structuring my elements in index.html so that I could immediately work on building functions in the JS file. I first built out function that would increase the pet's status numbers like hunger, boredom, and sleepiness. Then I created a button that served as an event listener to trigger my increase functions. Then I included an age timer that would notify the application when to change the default image to the pet's next evolution.  After the evolution effect was done, I added a naming function to the pet which concluded most of my work in the JS file. I moved on to complete a very basic layout in the CSS file. 
 
 
-### Unfinished Tasks
+## Unfinished Tasks
 
 - Use bootstrap to define width of the image element
 - Create Modals to welcome user into the game
 - Create bars that represent the pet's status numbers
 - Change the opacity of the blue background colors
+- Adding animation for 2nd and 3rd Evolution images
 
 
 ## Wireframe
 
 ![Wireframe](https://user-images.githubusercontent.com/98079271/152946963-25dc2253-5719-4fbe-ad36-d73298a49bee.png)
 
+
+## Resources
+
+- [Animate.css](https://animate.style/)
+- [MDN Javascript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [jQuery Docs](http://api.jquery.com/)
+- [Bootstrap Docs](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [Github Pages](https://pages.github.com/)
