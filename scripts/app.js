@@ -4,8 +4,6 @@ let boredom = 1;
 let sleepiness = 1;
 
 
-
-
 // Increase petAge
 // setInterval(updateTimer, 1000);
 // Change Pet Images to reflect evolution
@@ -28,9 +26,6 @@ const increaseAge = () => {
 }
 
 
-
-
-
 // Increase petStats to reflect growing hunger,boredom,and sleepiness.
 const increaseHunger = () => {
     hunger++;
@@ -39,7 +34,7 @@ const increaseHunger = () => {
         hunger = 1; 
     }
     if (hunger === 10) {
-        alert("Your dino has ran away. You will never see them again. Refresh the page to restart the game.");
+        alert("Your dino has ran away. You will never see them again, unless you try again.");
         clearInterval(ageTimer);
         clearInterval(hungerTimer);
         clearInterval(boredomTimer);
@@ -53,7 +48,7 @@ const increaseBoredom = () => {;
         boredom = 1; 
     }
     if (boredom === 10) {
-        alert("Your dino has ran away. You will never see them again. Refresh the page to restart the game.");
+        alert("Your dino has ran away. You will never see them again, unless you try again.");
         clearInterval(ageTimer);
         clearInterval(hungerTimer);
         clearInterval(boredomTimer);
@@ -67,7 +62,7 @@ const increaseSleepiness = () => {
         sleepiness = 1; 
     }
     if (sleepiness === 10) {
-        alert("Your dino has ran away. You will never see them again. Refresh the page to restart the game.");
+        alert("Your dino has ran away. You will never see them again, unless you try again.");
         clearInterval(ageTimer);
         clearInterval(hungerTimer);
         clearInterval(boredomTimer);
@@ -131,3 +126,10 @@ document.querySelector("#nameButton").addEventListener("click", function(event){
   
     document.querySelector("#nameInput").value = "";
   });
+
+
+//   Restart button
+const restartButton = $(".restartButton");
+restartButton.on("click", () => {
+    location.reload();
+});
