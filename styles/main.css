@@ -4,11 +4,12 @@
 
 body {
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fpokemon-pc-panic%2Fimages%2Fa%2Fae%2F1._Pallet_Map.PNG%2Frevision%2Flatest%3Fcb%3D20140107111450&f=1&nofb=1);
-
-    /* padding: 0;
+    padding: 0;
     margin: 0;
     display: flex;
-    justify-content: column; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .petName {
@@ -17,3 +18,18 @@ body {
     height: 130px;
 }
 
+.petImage {
+    border: 5px solid black;
+    height: 600px;
+}
+
+.status{
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+img{
+    height: 100%;
+	width: auto;
+	object-fit: cover;
+}
