@@ -7,6 +7,7 @@ let sleepiness = 1;
 // Increase petAge
 // setInterval(updateTimer, 1000);
 // Change Pet Images to reflect evolution
+
 const currentImage = $(".currentImage");
 const currentTitle = $(".currentTitle");
 
@@ -27,6 +28,7 @@ const increaseAge = () => {
 
 
 // Increase petStats to reflect growing hunger,boredom,and sleepiness.
+
 const increaseHunger = () => {
     hunger++;
     $("#hungerStat").text('Hunger: ' + hunger);
@@ -41,6 +43,7 @@ const increaseHunger = () => {
         clearInterval(sleepinessTimer);
     }
 }
+
 const increaseBoredom = () => {;
     boredom++;
     $("#boredomStat").text('Boredom: ' + boredom);
@@ -55,6 +58,7 @@ const increaseBoredom = () => {;
         clearInterval(sleepinessTimer);
     }
 }
+
 const increaseSleepiness = () => {
     sleepiness++;
     $("#sleepinessStat").text('Sleepiness: ' + sleepiness);
@@ -70,13 +74,16 @@ const increaseSleepiness = () => {
     }
 }
 
+
+
+
+// Start Button
+
 let ageTimer;
 let hungerTimer;
 let boredomTimer;
 let sleepinessTimer;
 
-
-// Start Button
 const startButton = $(".startButton");
 startButton.on("click", () => {
     increaseAge();
@@ -91,6 +98,7 @@ startButton.on("click", () => {
 
 
 // Feed, play, lights off buttons for User Action
+
 const feed = $("#feed");
 feed.on("click", (event) => {
     hunger--;
@@ -129,6 +137,7 @@ document.querySelector("#nameButton").addEventListener("click", function(event){
 
 
 //   Restart button
+
 const restartButton = $(".restartButton");
 restartButton.on("click", () => {
     location.reload();
